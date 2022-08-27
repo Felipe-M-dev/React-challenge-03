@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+https://react-challenge03.netlify.app/
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Desafío 3 - Base de datos colaboradores
 
-## Available Scripts
+En este desafío validaremos nuestros conocimientos en la renderización dinámica de componentes.
 
-In the project directory, you can run:
+Lee todo el documento antes de comenzar el desarrollo, para asegurarte de tener el máximo de puntaje y enfocar bien los esfuerzos.
 
-### `npm start`
+## Descripción
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Un cliente nos solicita una aplicación que muestre un listado de colaboradores a partir de unos datos entregados, donde adicionalmente se pueda agregar colaboradores nuevos y filtrar la lista de resultados a partir de una barra de búsqueda que filtre en función del nombre del colaborador.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Datos iniciales: ``BaseColaboradores``
 
-### `npm test`
+```javascript
+export const BaseColaboradores = [
+  {
+    id: "1",
+    nombre: "Colaborador 1",
+    correo: "colaborador1@colaborador1.com"
+  },
+  {
+    id: "2",
+    nombre: "Colaborador 2",
+    correo: "colaborador2@colaborador2.com"
+  },
+  {
+    id: "3",
+    nombre: "Colaborador 3",
+    correo: "colaborador3@colaborador3.com"
+  },
+]
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Material de estudio asociado
 
-### `npm run build`
+  ● Guía 3 - Renderización dinámica de componentes
+  ● Guía 2 - Estado de los componentes y eventos (Puede ser útil para el punto 2)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Requerimientos
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Cargar los datos base desde un archivo e importarlos en el archivo App.js y mostrarlos (de la forma que fue enseñado en la guía). (3 Puntos)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Agregar colaboradores a la lista. (3 Puntos)
 
-### `npm run eject`
+Hint: Si para agregar una tarea necesitamos un input y un estado para guardar el input, para agregar un colaborador con nombre y correo se necesitan dos inputs y dos estados del tipo string o un estado del tipo objeto.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Crear una búsqueda de colaboradores por nombre. (3 Puntos).
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Hint: Puedes utilizar el método .filter() de JavaScript para retornar el nuevo arreglo de colaboradores, a diferencia del borrado, el filter() se debe aplicar sobre el arreglo original en lugar del estado anterior.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. Darle el estilo a la aplicación utilizando CSS. El estilo aplicado debe ser coherente con la aplicación. (1 Puntos)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+😊¡Mucho éxito!
 
-## Learn More
+<p align="center">
+  <img src="https://github.com/Felipe-M-dev/React-challenge-03/blob/main/01.png?raw=true?raw=true" alt="Imagen 01"><br>
+Imagen 1. Resultado de aplicación<br>
+Fuente: Desafío Latam
+</p>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Consideraciones y recomendaciones |
+--- |
+● Los estilos de la aplicación quedan a libre elección mediante CSS, Bootstrap, react-bootstrap o algún otro Framework a elección. |
